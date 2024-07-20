@@ -2,61 +2,110 @@
 
 @section('content')
 
-    
-		<!-- Start Page Title Area -->
-		<div class="page-title-area">
-			<div class="container">
-				<div class="page-title-content">
-					<h2>Services details</h2>
+    <!-- Page header Start -->
+    <div class="page-header parallaxie">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Page Header box Start -->
+                    <div class="page-header-box">
+                        <h2 class="">{{$info->name}}</h2>
+                        <nav class="wow fadeInUp" data-wow-delay="0.25s">
+                            <ol class="breadcrumb">
+                                <li><a href="#">الرئيسيه</a></li>
+                                <li>{{$info->name}}</li>
+                            </ol>
+                        </nav>                                
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
 
-					<ul>
-						<li>
-							<a href="{{route('index')}}">
-								Home 
-							</a>
-						</li>
+    <!-- Service Details Section Start -->
+    <div class="service-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <!-- Service Details Content Start -->
+                    <div class="service-details-content">
+                        <!-- Service Details image Start -->
+                        <div class="service-details-featured-image">
+                            <figure class="reveal image-anime">
+                                <img src="{{ asset('storage/' . $info->images[0]) }}" alt="">
+                            </figure>
+                        </div>
+                        <!-- Service Details image End -->
 
-						<li class="active">Services details</li>
-					</ul>
-				</div>
-			</div>
+                        <!-- Service Details body Start -->
+                        <div class="service-details-body">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.25s">{{$info->name}}</h2>
 
-			<div class="shape shape-1">
-				<img src="{{asset('assets/images/page-title-shape-1.png')}}" alt="Image">
-			</div>
-			<div class="shape shape-2">
-				<img src="{{asset('assets/images/page-title-shape-2.png')}}" alt="Image">
-			</div>
-		</div>
-		<!-- End Page Title Area -->
-		
-		<!-- Start Services Details Area -->
-		<section class="services-details-area ptb-100">
-			<div class="container">
-				<div class="row">
-					
+                            <p class="wow fadeInUp" data-wow-delay="0.5s">{{$info->description}}</p>
 
+                            
+                        </div>
+                        <!-- Service Details body End -->
 
-					<div class="col-lg-8 text-center">
-						<div class="services-details-top-content">
-							<div class="services-details-content content-1">
-								<h3>{{$info->name}}</h3>
-								<div class="services-details-img">
-									<img src="{{ asset('storage/' . $info->images[0]) }}" alt="Image">
-								</div>
-							</div>
+                        <!-- Service Details footer Start -->
+                        <div class="service-details-footer">
+							@foreach($services as $service)
+                            <div class="service-details-image-box wow fadeInUp" data-wow-delay="0.25s">
+                                <figure class="image-anime">
+                                    <img src="{{ asset('storage/' . $service->images[0]) }}" alt="">
+                                </figure>
+                             </div>
+                            @endforeach
+                            
+                        </div>
+                        <!-- Service Details footer End -->
+                    </div>
+                    <!-- Service Details Content End -->
+                </div>
+                <div class="col-lg-4  col-md-12">
+                    <!-- Service Details sidebar Start -->
+                    <div class="service-details-sidebar">
+                        <!-- Post Category List Start -->
+                        <div class="post-Category-list wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="footer-info-heading">
+                                <h2>خدمات لوجستيه</h2>
+                            </div>
+                            <ul>
+								@foreach($services as $service)
+                                <li><a href="{{route('show_service',$service->id)}}"><i class="fa-solid fa-right-long"></i> {{$service->name}}</a></li>
+                                @endforeach
+								
+                            </ul>
+                        </div>
+                        <!-- Post Category List End -->
 
-							<div class="services-details-content content-2">
-								<p>{{$info->description}}</p>
-							</div>
+                        <!-- Service Logistics Card Start -->
+                        <div class="service-logistics-card wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="logistics-card-image">
+                                <img src="{{asset('assets/images/logo.svg')}}" alt="">
+                            </div>
+                            <div class="logistics-card-title">
+                                <h2>Need Help ?</h2>
+                                <p>Got questions or need assistance with your logistics needs? Our team is here to help.</p>
+                            </div>
+                            <div class="logistics-card-body">
+                                <a href="#" class="btn-default">contact us</a>
+                                <!--Get Contact Us Start-->
+                                <div class="header-contact-us">
+                                    <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>Call Anytime <span>808 707 6060</span></h3></a>
+                                </div>                           
+                                <!--Get Contact Us End-->   
+                            </div>
+                        </div>
+                        <!-- Service Logistics Card End -->
+                    </div>
+                    <!-- Service Details sidebar End -->
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Service Details Section End -->
 
-							
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- End Services Details Area -->
     @endsection

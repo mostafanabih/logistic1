@@ -1,143 +1,136 @@
 @extends('frontend.site.app')
 
 @section('content')
-   <!-- Start Page Title Area -->
-		<div class="page-title-area">
-			<div class="container">
-				<div class="page-title-content">
-					<h2>Contact</h2>
+  
+    <!-- Page header Start -->
+    <div class="page-header parallaxie">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Page Header box Start -->
+                    <div class="page-header-box">
+                        <h2 class="">اتصل بنا</h2>
+                        <nav class="wow fadeInUp" data-wow-delay="0.25s">
+                            <ol class="breadcrumb">
+                                <li><a href="#">الرئيسيه</a></li>
+                                <li>اتصل بنا</li>
+                            </ol>
+                        </nav>                                
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
 
-					<ul>
-						<li>
-							<a href="index.html">
-								Home 
-							</a>
-						</li>
+    <!-- Get In Touch Section Start -->
+    <div class="get-in-touch">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6">
+                    <!-- Get Quote Start -->
+                    <div class="get-quote">
+                        <h2 class="text-anime-style-3">Drop us a line</h2>
+                        <div class="get-quote-content">
+                            <p class="wow fadeInUp" data-wow-delay="0.5s">Please fill out the form below to get in touch with us. We'll get back to you as soon as possible.</p>
+                        </div>
+                        <div class="get-quote-form wow fadeInUp" data-wow-delay="0.75s">
+                            <form id="contactForm" action="#" method="post" data-toggle="validator">
+                                <div class="row">
+                                    <div class="form-group col-md-12 mb-3">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name" required="">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
 
-						<li class="active">Contact Us</li>
-					</ul>
-				</div>
-			</div>
+                                    <div class="form-group  col-md-12 mb-3">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required="">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
 
-			<div class="shape shape-1">
-				<img src="assets/images/page-title-shape-1.png" alt="Image">
-			</div>
-			<div class="shape shape-2">
-				<img src="assets/images/page-title-shape-2.png" alt="Image">
-			</div>
-		</div>
-		<!-- End Page Title Area -->
+                                    <div class="form-group col-md-12 mb-3">
+                                        <textarea name="msg" class="form-control" id="msg" rows="3" placeholder="Write Your Message" required=""></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
 
-		<!-- Start Contact Info Area -->
-		<div class="contact-info-area pt-100 pb-70">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6">
-						<div class="single-contact-info">
-							<i class="ri-map-pin-fill"></i>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn-default">Submit</button>
+                                        <div id="msgSubmit" class="h3 hidden"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Get Quote End -->
+                </div>
 
-							<div class="count-title">
-								<p>2976 Sunrise Road Las Vegas, NV 89108</p>
-							</div>
-						</div>
-					</div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="contact-us">
+                        <h2 class="text-anime-style-3">Quick links</h2>
+                        <!-- Contact Us Info Start -->
+                        <div class="contact-us-info">
+                            <div class="footer-info-box wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="icon-box">
+                                    <img src="{{asset('assets/images/icon-mail.svg')}}" alt="">
+                                </div>
 
-					<div class="col-lg-4 col-md-6">
-						<div class="single-contact-info">
-							<i class="ri-phone-fill"></i>
+                                <p>Help@gmail.com</p>
+                            </div>
 
-							<div class="count-title">
-								<a href="tel:+1-(514)-312-5678">+1 (514) 312-5678</a>
-								<a href="tel:+1-(514)-312-6677">+1 (514) 312-6677</a>
-							</div>
-						</div>
-					</div>
+                            <div class="footer-info-box wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="icon-box">
+                                    <img src="{{asset('assets/images/icon-location.svg')}}" alt="">
+                                </div>
 
-					<div class="col-lg-4 col-md-6">
-						<div class="single-contact-info">
-							<i class="ri-mail-fill"></i>
+                                <p>121 King Street, Melbourne</p>
+                            </div>
 
-							<div class="count-title">
-								<a href="/cdn-cgi/l/email-protection#365f585059765b574244591855595b"><span class="__cf_email__" data-cfemail="650c0b030a25080411170a4b060a08">sales@tmnlogisticss.com</span></a>
-								<a href="/cdn-cgi/l/email-protection#3d55585151527d505c494f52135e5250"><span class="__cf_email__" data-cfemail="7018151c1c1f301d1104021f5e131f1d">sales@tmnlogisticss.com</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Contact Info Area -->
+                            <div class="footer-info-box wow fadeInUp" data-wow-delay="0.75s">
+                                <div class="icon-box">
+                                    <img src="{{asset('assets/images/icon-call.svg')}}" alt="">
+                                </div>
 
-		<!-- Start Map Area -->
-		<div class="map-area pb-100">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51502.423422968604!2d-115.24877995231783!3d36.21758989848515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8eaf574293f1b%3A0x8e720e5b03149745!2sLas%20Vegas%2C%20NV%2089108%2C%20USA!5e0!3m2!1sen!2sbd!4v1612342385496!5m2!1sen!2sbd"></iframe>
-		</div>
-		<!-- End Map Area -->
+                                <p>808 707 6060</p>
+                            </div>
+                        </div>
+                        <!-- Contact Us Info End -->
 
-		<!-- Start Contact Area -->
-		<section class="main-contact-area pb-100">
-			<div class="container">
-				<div class="section-title">
-					<h2>Write us a message</h2>
-				</div>
+                        <!-- Contact Us Footer Start -->
+                        <div class="contact-us-footer wow fadeInUp" data-wow-delay="1s">
+                            <div class="topbar-social-links contact-details">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--Get Contact Us Start-->
+                            <div class="header-contact-us">
+                                <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>Call Anytime <span>808 707 6060</span></h3></a>
+                            </div>                           
+                            <!--Get Contact Us End--> 
+                        </div>
+                        <!-- Contact Us Footer End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Get In Touch Section End -->
 
-				<form  action="{{route('contact_us')}}" method="post">
-          @csrf
-					<div class="row">
-						<div class="col-lg-6 col-sm-6">
-							<div class="form-group">
-								<label>Your name</label>
-								<input type="text" name="name" id="name" class="form-control" required="" data-error="Please enter your name">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
+    <!-- Google Map Iframe Start -->
+    <div class="google-map">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="google-map-iframe">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5464675033077!2d-0.12209412310046139!3d51.503189711010585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sin!4v1706532987654!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google Map Iframe End -->
 
-						<div class="col-lg-6 col-sm-6">
-							<div class="form-group">
-								<label>Your email</label>
-								<input type="email" name="email" id="email" class="form-control" required="" data-error="Please enter your email">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
 
-						<div class="col-lg-6 col-sm-6">
-							<div class="form-group">
-								<label>Your phone</label>
-								<input type="text" name="phone" id="phone_number" required="" data-error="Please enter your number" class="form-control">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-						<div class="col-lg-6 col-sm-6">
-							<div class="form-group">
-								<label>Subject</label>
-								<input type="text" name="subject" id="msg_subject" class="form-control" required="" data-error="Please enter your subject">
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="form-group">
-								<label>Your message</label>
-								<textarea name="message" class="form-control" id="message" cols="30" rows="8" required="" data-error="Write your message"></textarea>
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-						
-						<div class="col-lg-12 col-md-12">
-							<button type="submit" class="default-btn">
-								<span>
-									Send message
-									<i class="ri-arrow-right-circle-line"></i>
-								</span>
-							</button>
-							<!-- <div id="msgSubmit" class="h3 text-center hidden"></div> -->
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</section>
-		<!-- End Contact Area -->
     @endsection

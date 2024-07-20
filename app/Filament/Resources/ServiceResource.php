@@ -21,7 +21,7 @@ class ServiceResource extends Resource
     use Translatable;
     public static function getTranslatableLocales(): array
     {
-        return ['en'];
+        return ['ar'];
     }
     
     protected static ?string $model = Service::class;

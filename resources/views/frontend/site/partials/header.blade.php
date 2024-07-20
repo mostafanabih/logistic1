@@ -10,14 +10,14 @@
                     <!-- Main Menu Start -->
                     <div class="collapse navbar-collapse main-menu">
                         <ul class="navbar-nav mr-auto" id="menu">
-                            <li class="nav-item "><a class="nav-link" href="index.html">الصحة الرئيسية</a>
+                            <li class="nav-item "><a class="nav-link" href="{{route('index')}}">الصحة الرئيسية</a>
 
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="about-us.html">حول </a></li>
-                            <li class="nav-item"><a class="nav-link" href="service.html">الخدمات</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">المدونة</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('about')}}">حول </a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('services')}}">الخدمات</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('posts')}}">المدونة</a></li>
 
-                            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('contacts')}}">اتصل بنا</a></li>
                         </ul>
                     </div>
                     <!-- Main Menu End -->

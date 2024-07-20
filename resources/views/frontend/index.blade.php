@@ -186,13 +186,14 @@
             </div>
 
             <div class="row">
+                @foreach($services as $service)
                 <div class="col-lg-4 col-md-6">
                     <!-- Our Service Item Start -->
                     <div class="our-service-item wow fadeInUp" data-wow-delay="0.25s">
                         <!-- Our Service Image Start -->
                         <div class="our-service-image">
                             <figure class="image-anime">
-                                <img src="{{asset('assets/images/service-1.jpg')}}" alt="">
+                                <img src="{{ asset('storage/' . $service->images[0]) }}" alt="">
                             </figure>
                         </div>
                         <!-- Our Service Image End -->
@@ -204,81 +205,21 @@
                                     <img src="{{asset('assets/images/icon-cargo-1.svg')}}" alt="">
                                 </div>
                                 <div class="our-service-title">
-                                    <h2>Ocean Freight</h2>
+                                    <h2>{{$service->name}}</h2>
                                 </div>
                             </div>
                             <div class="our-service-content-button">
-                                <a href="#"><i class="fa-regular fa-circle-right"></i></a>
+                                <a href="{{route('show_service',$service->id)}}"><i class="fa-regular fa-circle-right"></i></a>
                             </div>
                         </div>
                         <!-- Our Service Content End -->
                     </div>
                     <!-- Our Service Item End -->
                 </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Our Service Item Start -->
-                    <div class="our-service-item wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Our Service Image Start -->
-                        <div class="our-service-image">
-                            <figure class="image-anime">
-                                <img src="{{asset('assets/images/service-2.jpg')}}" alt="">
-                            </figure>
-                        </div>
-                        <!-- Our Service Image End -->
-
-                        <!-- Our Service Content Start -->
-                        <div class="our-service-content">
-                            <div class="service-content-box">
-                                <div class="our-service-icon">
-                                    <img src="{{asset('assets/images/icon-cargo-2.svg')}}" alt="">
-                                </div>
-                                <div class="our-service-title">
-                                    <h2>Air Freight</h2>
-                                </div>
-                            </div>
-                            <div class="our-service-content-button">
-                                <a href="#"><i class="fa-regular fa-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- Our Service Content End -->
-                    </div>
-                    <!-- Our Service Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Our Service Item Start -->
-                    <div class="our-service-item wow fadeInUp" data-wow-delay="0.75s">
-                        <!-- Our Service Image Start -->
-                        <div class="our-service-image">
-                            <figure class="image-anime">
-                                <img src="{{asset('assets/images/service-3.jpg')}}" alt="">
-                            </figure>
-                        </div>
-                        <!-- Our Service Image End -->
-
-                        <!-- Our Service Content Start -->
-                        <div class="our-service-content">
-                            <div class="service-content-box">
-                                <div class="our-service-icon">
-                                    <img src="{{asset('assets/images/icon-cargo-3.svg')}}" alt="">
-                                </div>
-                                <div class="our-service-title">
-                                    <h2>cargo Freight</h2>
-                                </div>
-                            </div>
-                            <div class="our-service-content-button">
-                                <a href="#"><i class="fa-regular fa-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- Our Service Content End -->
-                    </div>
-                    <!-- Our Service Item End -->
-                </div>
-
+                @endforeach
                 <!-- Our Service Footer Start -->
                 <div class="our-service-footer wow fadeInUp" data-wow-delay="1s">
-                    <a href="#" class="btn-default">عرض جميع الخدمات</a>
+                    <a href="{{route('services')}}" class="btn-default">عرض جميع الخدمات</a>
                 </div>
                 <!-- Our Service Footer End -->
             </div>

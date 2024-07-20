@@ -21,16 +21,10 @@ class HomeController extends Controller
 {
 public function index()
 {
-    $clients = Client::all();
-    $about = About::first();
-    $packages = Package::all();
     $posts = Post::all();
-    $services = Service::all();
-    $web_projects = Project::where('type','مواقع الكترونيه')->get();
-    $social_projects = Project::where('type','حملات اعلانيه')->get();
-    $account_projects = Project::where('type','اداره حسابات')->get();
+    $services = Service::take(3)->get();
     
-    return view('frontend.index',compact('about','packages','posts','services','clients','web_projects','social_projects','account_projects'));
+    return view('frontend.index',compact('posts','services'));
 }
 
 public function about()

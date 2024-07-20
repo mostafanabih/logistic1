@@ -2,120 +2,226 @@
 @section('content')
 
 
-		<!-- Start Page Title Area -->
-		<div class="page-title-area">
-			<div class="container">
-				<div class="page-title-content">
-					<h2>Blog</h2>
+    <!-- subpage header Start -->
+    <div class="page-header parallaxie">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Page Header box Start -->
+                    <div class="page-header-box">
+                        <h2 class="">اخر الأخبار</h2>
+                        <nav class="wow fadeInUp" data-wow-delay="0.25s">
+                            <ol class="breadcrumb">
+                                <li><a href="#">الرئيسيه</a></li>
+                                <li> اخر الأخبار</li>
+                            </ol>
+                        </nav>                                
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
 
-					<ul>
-						<li>
-							<a href="index.html">
-								Home 
-							</a>
-						</li>
+    <!-- Blog Page section Start -->
+    <div class="latest-posts blog-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('assets/images/post-1.jpg')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
 
-						<li class="active">Blog</li>
-					</ul>
+                        <!-- Post Body Start -->
+                        <div class="post-body">
+                            <h3><a href="#">Overcoming Challenges in International Freight Forwarding</a></h3>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a href="#">admin /</a></li>
+                                    <li><a href="#"> Fab 26, 2024</a></li>
+                                </ul>
+                            </div>
+                            <div class="post-readmore">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="0.5s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('assets/images/post-2.jpg')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Body Start -->
+                        <div class="post-body">
+                            <h3><a href="#">Logistics Strategies for a Freight Transport Greener Future</a></h3>
+
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a href="#">admin /</a></li>
+                                    <li><a href="#"> Fab 26, 2024</a></li>
+                                </ul>
+                            </div>
+                            <div class="post-readmore">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="0.75s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('assets/images/post-3.jpg')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Body Start -->
+                        <div class="post-body">
+                            <h3><a href="#">Enhancing Customer Experience Transport Solutions</a></h3>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a href="#">admin /</a></li>
+                                    <li><a href="#"> Fab 26, 2024</a></li>
+                                </ul>
+                            </div>
+                            <div class="post-readmore">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="1s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('assets/images/post-4.jpg')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Body Start -->
+                        <div class="post-body">
+                           <h3><a href="#">The Importance of Supply Chain Visibility in Logistics</a></h3>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a href="#">admin /</a></li>
+                                    <li><a href="#"> Fab 26, 2024</a></li>
+                                </ul>
+                            </div>
+                            <div class="post-readmore">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Body End -->
+                    </div>
+                    <!-- Post Item End -->                            
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="1.25s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('assets/images/post-5.jpg')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Body Start -->
+                        <div class="post-body">
+                            <h3><a href="#">What is the future of truckload transportation?</a></h3>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a href="#">admin /</a></li>
+                                    <li><a href="#"> Fab 26, 2024</a></li>
+                                </ul>
+                            </div>
+                            <div class="post-readmore">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="1.5s">
+                        <!-- Post Featured Image Start -->
+                        <div class="post-featured-image">
+                            <figure class="image-anime">
+                                <img src="{{asset('assets/images/post-6.jpg')}}" alt="">
+                            </figure>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Body Start -->
+                        <div class="post-body">
+                            <h3><a href="#">Top Trends in the Transportation and Logistics</a></h3>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><a href="#">admin /</a></li>
+                                    <li><a href="#"> Fab 26, 2024</a></li>
+                                </ul>
+                            </div>
+                            <div class="post-readmore">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+            </div>
+            
+            <div class="row">
+				<div class="col-md-12">
+					<!-- Post Pagination Start -->
+					<div class="post-pagination wow fadeInUp" data-wow-delay="1s">
+						<ul class="pagination">
+							<li><a href="#"><i class="fa-solid fa-arrow-left-long"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+						</ul>
+					</div>
+					<!-- Post Pagination End -->
 				</div>
 			</div>
-
-			<div class="shape shape-1">
-				<img src="assets/images/page-title-shape-1.png" alt="Image">
-			</div>
-			<div class="shape shape-2">
-				<img src="assets/images/page-title-shape-2.png" alt="Image">
-			</div>
-		</div>
-		<!-- End Page Title Area -->
-		
-		<!-- Start Blog Page Area -->
-		<section class="blog-page-area ptb-100">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="row">
-            @foreach($posts as $post)
-							<div class="col-lg-12">
-								<div class="single-blog-box">
-									<a href="blog-details.html">
-										<img src="{{asset("storage/$post->image")}}" alt="Images">
-									</a>
-									<ul>
-										<li>
-											<i class="ri-calendar-line"></i>
-											{{ $post->created_at->format('d M Y') }}
-										</li>
-										<li>{{$post->type}}</li>
-									</ul>
-									<h3>
-										<a href="blog-details.html">
-											{{$post->name}}
-										</a>
-									</h3>
-									<p>{{$post->description}}</p>
-									<a href="{{route('show_post',$post->id)}}" class="read-more">
-										Read more
-										<i class="ri-add-circle-fill"></i>
-									</a>
-								</div>
-							</div>
-		        @endforeach
-							
-						</div>
-					</div>
-
-					<div class="col-lg-4">
-						<div class="widget-sidebar">
-							
-
-							<div class="sidebar-widget recent-post">
-								<h3 class="widget-title">Other posts</h3>
-								
-								<ul>
-								@foreach($posts as $post)
-									<li>
-										<a href="{{route('show_post',$post->id)}}">
-											{{$post->name}}
-											<img src="{{ asset('storage/' . $post->image) }}" alt="Image" style="height:100px;width:100px;">
-										</a>
-										<span>{{ $post->created_at->format('d M Y') }}</span>
-									</li>
-									@endforeach
-								</ul>
-							</div>
-	
-							<div class="sidebar-widget tags mb-0">
-								<h3>Popular tags</h3>
-	
-								<ul>
-									<li>
-										<a href="blog.html">Logistic</a>
-									</li>
-									<li>
-										<a href="blog.html">Transport</a>
-									</li>
-									<li>
-										<a href="blog.html">Freight</a>
-									</li>
-									<li>
-										<a href="blog.html">Warehouse</a>
-									</li>
-									<li>
-										<a href="blog.html">Management</a>
-									</li>
-									<li>
-										<a href="blog.html">Supply Chain</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Blog Page Area -->
-
+        </div>
+    </div>
+    <!-- Blog Page section End -->
 
     
 @endsection
