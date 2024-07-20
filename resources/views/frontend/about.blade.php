@@ -1,8 +1,8 @@
 @extends('frontend.site.app')
 
 @section('content')
- 
-	
+
+
     <!-- Page header Start -->
     <div class="page-header parallaxie">
         <div class="container">
@@ -16,7 +16,7 @@
                                 <li><a href="#">الرئيسيه</a></li>
                                 <li>من نحن</li>
                             </ol>
-                        </nav>                                
+                        </nav>
                     </div>
                     <!-- Page Header Box End -->
                 </div>
@@ -34,25 +34,26 @@
                     <div class="home-transportation-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h2 class="text-anime-style-3"><span>Providing full range</span> of transportation</h2>
+                            <h2 class=""><span>شركة تميز النجاح
+                            </span> </h2>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Home Transportation Body Start -->
                         <div class="home-transportation-body">
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">Lorem Ipsum is simply dummy text of the k a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but</p>
-                            <p class="wow fadeInUp" data-wow-delay="0.5s">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">حلول سلسلة التوريد المتكاملة في مكان واحد في عالم الخدمات اللوجستية وإدارة سلسلة التوريد المتنامي، تبرز شركة تميز النجاح كمنارة للكفاءة والموثوقية والتركيز على العملاء نحن فريق من المهنيين المتحمسين، مدفوعين برؤية مشتركة لتبسيط عمليات عملكم التجارية ودفعكم نحو نجاح لا مثيل له
+
+                            </p>
                         </div>
                         <!-- Home Transportation Body End -->
 
                         <!-- Home Transportation footer Start -->
                         <div class="home-transportation-footer wow fadeInUp" data-wow-delay="0.75s">
                             <div class="transportation-footer-btn">
-                                <a href="#" class="btn-default">Discover More</a>
-                            </div>                            
+                            </div>
                             <div class="header-contact-us">
-                                <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>Call Anytime <span>808 707 6060</span></h3></a>
-                            </div>    
+                                <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>توصل معنا الان <span>0553383310</span></h3></a>
+                            </div>
                         </div>
                         <!-- Home Transportation footer End -->
                     </div>
@@ -76,8 +77,7 @@
 
                         <!-- Facts Counter Box Start -->
                         <div class="transportation-counter-box wow fadeInUp" data-wow-delay="0.5s">
-                            <h3><span class="counter">20</span>+</h3>
-                            <p>Years of Experience</p>
+                            <p>نحن الافضل</p>
                         </div>
                         <!-- Facts Counter Box End -->
                     </div>
@@ -89,7 +89,7 @@
     <!-- Transportation Section End -->
 
     <!-- About Transport Section Start -->
-    <div class="about-transport">
+    {{-- <div class="about-transport">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-md-4">
@@ -110,7 +110,7 @@
                     </div>
                     <!-- Transport Item End -->
                 </div>
-               
+
                 <div class="col-md-4">
                     <!-- Transport Item Start -->
                     <div class="transport-item wow fadeInUp" data-wow-delay="0.5s">
@@ -129,7 +129,7 @@
                     </div>
                     <!-- Transport Item End -->
                 </div>
-                
+
                 <div class="col-md-4">
                     <!-- Transport Item Start -->
                     <div class="transport-item wow fadeInUp" data-wow-delay="0.75s">
@@ -150,11 +150,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- About Transport Section End -->
 
     <!-- Our Industry Section Start -->
-    <div class="our-indurstry">
+    {{-- <div class="our-indurstry">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -175,30 +175,30 @@
                     <!-- Section Title End -->
 
                     <!-- Indurstry Content Start -->
-                    <div class="indurstry-content">  
-                        <p class="wow fadeInUp" data-wow-delay="0.25s">Lorem Ipsum is simply dummy text of the k a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but</p> 
-                        
+                    <div class="indurstry-content">
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Lorem Ipsum is simply dummy text of the k a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but</p>
+
                         <ul class="wow fadeInUp" data-wow-delay="0.5s">
                             <li><i class="fa-regular fa-circle-check"></i> freight forwarding</li>
                             <li><i class="fa-regular fa-circle-check"></i> secure storage facilities</li>
                             <li><i class="fa-regular fa-circle-check"></i> Last-mile delivery</li>
                             <li><i class="fa-regular fa-circle-check"></i> vendor management</li>
                             <li><i class="fa-regular fa-circle-check"></i> brokerage services</li>
-                            <li><i class="fa-regular fa-circle-check"></i> 24/7 customer support</li>       
+                            <li><i class="fa-regular fa-circle-check"></i> 24/7 customer support</li>
                         </ul>
 
-                        <a href="#" class="btn-default wow fadeInUp" data-wow-delay="0.75s">Get help now !</a>                            
+                        <a href="#" class="btn-default wow fadeInUp" data-wow-delay="0.75s">Get help now !</a>
                     </div>
                     <!-- Indurstry Content End -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Our Industry Section End -->
 
     <!-- Export Team Section Start -->
-    <div class="export-team">
+    {{-- <div class="export-team">
         <div class="container">
             <div class="row">
                 <!-- Section Title Start -->
@@ -275,13 +275,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Export Team Section End -->
 
     <!-- Our Contract Section Start -->
-    <div class="our-contract parallaxie">
+    {{-- <div class="our-contract parallaxie">
         <div class="container">
-            <div class="row align-items-center">  
+            <div class="row align-items-center">
                 <div class="col-md-12">
                     <!-- Our Cta Box Start -->
                     <div class="our-cta-box">
@@ -297,14 +297,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Our Contract Section End -->
 
-    
+
 @endsection
 
 
 
 
 
-   

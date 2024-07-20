@@ -136,7 +136,7 @@
                             <div class="transportation-footer-btn">
                             </div>
                             <div class="header-contact-us">
-                                <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>توصل معنا الان <span>055338310</span></h3></a>
+                                <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>توصل معنا الان <span>0553383310</span></h3></a>
                             </div>
                         </div>
                         <!-- Home Transportation footer End -->

@@ -83,7 +83,7 @@
                                         <i class="fa-solid fa-phone"></i>
                                     </div>
 
-                                    <p>055338310</p>
+                                    <p>0553383310</p>
                                 </div>
                             </div>
                             <!-- Footer Contact Info Box End -->
