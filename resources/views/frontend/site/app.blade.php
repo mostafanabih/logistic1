@@ -9,9 +9,18 @@
     <meta name="keywords" content="">
     <meta name="author" content="Awaiken">
     <!-- Page Title -->
-    <title>AeroLogix - Logistics & Transportation HTML Template</title>
+    <title>شركة تميز النجاح </title>
 	@include('frontend.site.partials.styles')
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+<style>
+*{
+    font-family: "Cairo", sans-serif;
+
+}
+</style>
+</head>
 
 <body class="tt-magic-cursor">
 
@@ -38,8 +47,8 @@
                     <!-- Topbar Contact Information Start -->
                     <div class="topbar-contact-info">
                         <ul>
-                            <li><a href="#"><i class="fa-solid fa-location-dot"></i> 121 King Street, Melbourne</a></li>
-                            <li><a href="#"><i class="fa-solid fa-at"></i> email@yourdomain.com</a></li>
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i> المملكة العربيه السعوديه الرياض </a></li>
+                            <li><a href="#"><i class="fa-solid fa-at"></i> info@cotamayozalnajah.com</a></li>
                         </ul>
                     </div>
                     <!-- Topbar Contact Information End -->
@@ -60,15 +69,15 @@
         </div>
     </div>
     <!-- Topbar Section End -->
-        
+
       @include('frontend.site.partials.header')
 
       @yield('content')
 
-    
+
      @include('frontend.site.partials.footer')
 
-    
+
      @include('frontend.site.partials.scripts')
 	 </body>
 	 </html>
