@@ -58,9 +58,9 @@
                     <!-- Topbar Social Links Start -->
                     <div class="topbar-social-links">
                         <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61558719242354"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://x.com/shrkttmyzalnjah"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/shrkttmyzlnjaht.m.n?igsh=NWk1ZmxtNmNka3lm"><i class="fa-brands fa-instagram"></i></a></li>
                         </ul>
                     </div>
                     <!-- Topbar Social Links End -->

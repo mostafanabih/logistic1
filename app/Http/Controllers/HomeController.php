@@ -21,7 +21,7 @@ class HomeController extends Controller
 {
 public function index()
 {
-    $posts = Post::all();
+    $posts = Post::take(3)->get();
     $services = Service::take(3)->get();
     
     return view('frontend.index',compact('posts','services'));

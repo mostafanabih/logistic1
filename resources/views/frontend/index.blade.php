@@ -427,93 +427,41 @@
             </div>
 
             <div class="row">
+            @foreach($posts as $post)
                 <div class="col-lg-4 col-md-6">
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.25s">
                         <!-- Post Featured Image Start -->
                         <div class="post-featured-image">
                             <figure class="image-anime">
-                                <img src="{{asset('assets/images/post-1.jpg')}}" alt="">
+                                <img src="{{asset("storage/$post->image")}}" alt="">
                             </figure>
                         </div>
                         <!-- Post Featured Image End -->
 
                         <!-- Post Body Start -->
                         <div class="post-body">
-                            <h3><a href="#">Overcoming Challenges in International Freight Forwarding</a></h3>
+                            <h3><a href="#">{{$post->name}}</a></h3>
                             <div class="post-meta">
                                 <ul>
-                                    <li><a href="#">admin /</a></li>
-                                    <li><a href="#"> Fab 26, 2024</a></li>
+                                    <li><a href="#">{{$post->user}}</a></li>
+                                    <li><a href="#">{{ $post->created_at->format('d M Y') }}</a></li>
                                 </ul>
                             </div>
                             <div class="post-readmore">
-                                <a href="#">اقراء المزيد</a>
+                                <a href="{{route('show_post',$post->id)}}">Read More</a>
                             </div>
                         </div>
                         <!-- Post Body End -->
                     </div>
                     <!-- Post Item End -->
                 </div>
+                @endforeach
 
-                <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.5s">
-                        <!-- Post Featured Image Start -->
-                        <div class="post-featured-image">
-                            <figure class="image-anime">
-                                <img src="{{asset('assets/images/post-2.jpg')}}" alt="">
-                            </figure>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Body Start -->
-                        <div class="post-body">
-                            <h3><a href="#">Logistics Strategies for a Freight Transport Greener Future</a></h3>
-
-                            <div class="post-meta">
-                                <ul>
-                                    <li><a href="#">admin /</a></li>
-                                    <li><a href="#"> Fab 26, 2024</a></li>
-                                </ul>
-                            </div>
-                            <div class="post-readmore">
-                                <a href="#">اقراء المزيد</a>
-                            </div>
-                        </div>
-                        <!-- Post Body End -->
-                    </div>
-                    <!-- Post Item End -->
+                <div class="our-service-footer wow fadeInUp" data-wow-delay="1s">
+                    <a href="{{route('posts')}}" class="btn-default">عرض جميع المدونات</a>
                 </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.75s">
-                        <!-- Post Featured Image Start -->
-                        <div class="post-featured-image">
-                            <figure class="image-anime">
-                                <img src="{{asset('assets/images/post-3.jpg')}}" alt="">
-                            </figure>
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Body Start -->
-                        <div class="post-body">
-                            <h3><a href="#">Enhancing Customer Experience Transport Solutions</a></h3>
-                            <div class="post-meta">
-                                <ul>
-                                    <li><a href="#">admin /</a></li>
-                                    <li><a href="#"> Fab 26, 2024</a></li>
-                                </ul>
-                            </div>
-                            <div class="post-readmore">
-                                <a href="#">اقراء المزيد</a>
-                            </div>
-                        </div>
-                        <!-- Post Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
+               
             </div>
         </div>
     </div>
