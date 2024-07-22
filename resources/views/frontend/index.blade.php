@@ -161,8 +161,7 @@
 
                         <!-- Facts Counter Box Start -->
                         <div class="transportation-counter-box wow fadeInUp" data-wow-delay="0.5s">
-                            <h3><span class="counter">20</span>+</h3>
-                            <p>Years of Experience</p>
+                            <h3><span>نحن الافضل</span></h3>
                         </div>
                         <!-- Facts Counter Box End -->
                     </div>
@@ -461,7 +460,7 @@
                 <div class="our-service-footer wow fadeInUp" data-wow-delay="1s">
                     <a href="{{route('posts')}}" class="btn-default">عرض جميع المدونات</a>
                 </div>
-               
+
             </div>
         </div>
     </div>

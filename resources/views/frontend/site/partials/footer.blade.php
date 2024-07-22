@@ -10,7 +10,7 @@
                             <!-- Footer Heading Start -->
                             <div class="footer-heading">
                                 <figure>
-                                    <img src="{{asset('assets/images/footer-logo.svg')}}" alt="">
+                                    <img src="{{asset('assets/images/logo.png')}}" alt="">
                                 </figure>
                             </div>
                             <!-- Footer Heading End -->
