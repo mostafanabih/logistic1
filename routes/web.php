@@ -33,7 +33,9 @@ Route::get('/language/{locale}', 'LanguageController@changeLanguage')->name('lan
     Route::post('/contact-us', [HomeController::class, 'contact_us'])->name('contact_us');
     Route::post('/post-order', [HomeController::class, 'postOrder'])->name('post_order');
 
-
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
 
 
 	

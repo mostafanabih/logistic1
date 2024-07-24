@@ -448,7 +448,7 @@
                                 </ul>
                             </div>
                             <div class="post-readmore">
-                                <a href="{{route('show_post',$post->id)}}">Read More</a>
+                                <!--<a href="{{route('show_post',$post->id)}}">Read More</a>-->
                             </div>
                         </div>
                         <!-- Post Body End -->

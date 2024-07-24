@@ -4,7 +4,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <!-- Logo Start -->
-                    <a class="navbar-brand" href="index.html"><img src="{{asset('assets/images/logo.svg')}}" alt="" style="
+                    <a class="navbar-brand" href="/"><img src="{{asset('assets/images/logo.svg')}}" alt="" style="
                         width: 120px;
                     "></a>
                     <!-- Logo End -->

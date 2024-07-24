@@ -87,14 +87,16 @@
                                 <img src="{{asset('assets/images/logo.svg')}}" alt="">
                             </div>
                             <div class="logistics-card-title">
-                                <h2>Need Help ?</h2>
-                                <p>Got questions or need assistance with your logistics needs? Our team is here to help.</p>
+                                <h2>تميز النجاح</h2>
+                                <p>حلول سلسلة التوريد المتكاملة في مكان واحد في عالم الخدمات اللوجستية وإدارة سلسلة التوريد المتنامي، تبرز شركة تميز النجاح كمنارة للكفاءة والموثوقية والتركيز على العملاء نحن فريق من المهنيين المتحمسين، مدفوعين برؤية مشتركة لتبسيط عمليات عملكم التجارية ودفعكم نحو نجاح لا مثيل له
+
+</p>
                             </div>
                             <div class="logistics-card-body">
-                                <a href="#" class="btn-default">contact us</a>
+                                <a href="#" class="btn-default">توصل الان</a>
                                 <!--Get Contact Us Start-->
                                 <div class="header-contact-us">
-                                    <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>Call Anytime <span>808 707 6060</span></h3></a>
+                                    <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>هاتف <span>0553383310</span></h3></a>
                                 </div>                           
                                 <!--Get Contact Us End-->   
                             </div>
