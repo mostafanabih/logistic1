@@ -1,5 +1,11 @@
 <!DOCTYPE html>
+@if(LaravelLocalization::getCurrentLocale()=='ar')
 <html lang="en" dir="rtl">
+
+@else
+<html lang="en" dir="ltr">
+
+@endif
 <head>
     <!-- Meta -->
     <meta charset="utf-8">
@@ -47,7 +53,7 @@
                     <!-- Topbar Contact Information Start -->
                     <div class="topbar-contact-info">
                         <ul>
-                            <li><a href="#"><i class="fa-solid fa-location-dot"></i> المملكة العربيه السعوديه الرياض </a></li>
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i>{{trans('main.address')}} </a></li>
                             <li><a href="#"><i class="fa-solid fa-at"></i> info@cotamayozalnajah.com</a></li>
                         </ul>
                     </div>

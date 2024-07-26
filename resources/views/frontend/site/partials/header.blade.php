@@ -12,14 +12,23 @@
                     <!-- Main Menu Start -->
                     <div class="collapse navbar-collapse main-menu">
                         <ul class="navbar-nav mr-auto" id="menu">
-                            <li class="nav-item "><a class="nav-link" href="{{route('index')}}">الصحة الرئيسية</a>
+                            <li class="nav-item "><a class="nav-link" href="{{route('index')}}"> {{trans('main.home')}} </a>
 
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="{{route('about')}}">حول </a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{route('services')}}">الخدمات</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{route('posts')}}">المدونة</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('about')}}"> {{trans('main.about')}}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('services')}}"> {{trans('main.services')}}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('posts')}}"> {{trans('main.posts')}}</a></li>
 
-                            <li class="nav-item"><a class="nav-link" href="{{route('contacts')}}">اتصل بنا</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{route('contacts')}}">  {{trans('main.contacts')}}</a></li>
+                            
+    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        <li>
+            <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                {{ $properties['native'] }}
+            </a>
+        </li>
+    @endforeach
+
                         </ul>
                     </div>
                     <!-- Main Menu End -->

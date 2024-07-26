@@ -16,8 +16,14 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 */
 Route::get('/language/{locale}', 'LanguageController@changeLanguage')->name('language.change');
 
-// Route::group(['prefix' => LaravelLocalization::setLocale()], function()
-// {
+// routes/web.php
+
+
+
+/** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
+
+ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+ {
 	/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
     Route::get('/', [HomeController::class, 'index'])->name('index');
     Route::get('/about', [HomeController::class, 'about'])->name('about');
@@ -33,10 +39,8 @@ Route::get('/language/{locale}', 'LanguageController@changeLanguage')->name('lan
     Route::post('/contact-us', [HomeController::class, 'contact_us'])->name('contact_us');
     Route::post('/post-order', [HomeController::class, 'postOrder'])->name('post_order');
 
-Route::get('/linkstorage', function () {
-    Artisan::call('storage:link');
-});
+
 
 
 	
-// });
+ });
