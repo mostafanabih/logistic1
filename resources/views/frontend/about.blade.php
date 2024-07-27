@@ -10,11 +10,11 @@
                 <div class="col-lg-12">
                     <!-- Page Header box Start -->
                     <div class="page-header-box">
-                        <h2 class="">من نحن</h2>
+                        <h2 class="">{{trans('main.about')}}</h2>
                         <nav class="wow fadeInUp" data-wow-delay="0.25s">
                             <ol class="breadcrumb">
-                                <li><a href="#">الرئيسيه</a></li>
-                                <li>من نحن</li>
+                                <li><a href="#">{{trans('main.home')}}</a></li>
+                                <li>{{trans('main.about')}} </li>
                             </ol>
                         </nav>
                     </div>
@@ -34,14 +34,14 @@
                     <div class="home-transportation-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h2 class=""><span>شركة تميز النجاح
+                            <h2 class=""><span>  {{trans('main.tamayoz_alnajah_co')}}
                             </span> </h2>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Home Transportation Body Start -->
                         <div class="home-transportation-body">
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">حلول سلسلة التوريد المتكاملة في مكان واحد في عالم الخدمات اللوجستية وإدارة سلسلة التوريد المتنامي، تبرز شركة تميز النجاح كمنارة للكفاءة والموثوقية والتركيز على العملاء نحن فريق من المهنيين المتحمسين، مدفوعين برؤية مشتركة لتبسيط عمليات عملكم التجارية ودفعكم نحو نجاح لا مثيل له
+                            <p class="wow fadeInUp" data-wow-delay="0.25s"> {{trans('main.about_description')}}
 
                             </p>
                         </div>
@@ -52,7 +52,7 @@
                             <div class="transportation-footer-btn">
                             </div>
                             <div class="header-contact-us">
-                                <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>توصل معنا الان <span>0553383310</span></h3></a>
+                                <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>{{trans('main.contact_us_now')}} <span>0553383310</span></h3></a>
                             </div>
                         </div>
                         <!-- Home Transportation footer End -->
@@ -77,7 +77,7 @@
 
                         <!-- Facts Counter Box Start -->
                         <div class="transportation-counter-box wow fadeInUp" data-wow-delay="0.5s">
-                            <p>نحن الافضل</p>
+                            <p>{{trans('main.our_best')}}</p>
                         </div>
                         <!-- Facts Counter Box End -->
                     </div>

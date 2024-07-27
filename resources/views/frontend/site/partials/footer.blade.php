@@ -11,7 +11,7 @@
                             <div class="footer-heading">
                                 <figure>
                                     <img src="{{asset('assets/images/logo.png')}}" alt="">
-                                </figure>
+                                    </figure>
                             </div>
                             <!-- Footer Heading End -->
 
@@ -38,14 +38,14 @@
                         <!-- Footer links Start -->
                         <div class="footer-links">
                             <div class="footer-info-heading">
-                                <h2>الروابط</h2>
+                                <h2>{{trans('main.links')}}</h2>
                             </div>
                             <ul>
-                                <li><a href="#">الصفحة الرئيسية</a></li>
-                                <li><a href="#">حول</a></li>
-                                <li><a href="#">الخدمات</a></li>
-                                <li><a href="#">المدونه</a></li>
-                                <li><a href="#">توصل معنا</a></li>
+                                <li><a href="{{route('index')}}">{{trans('main.home')}}</a></li>
+                                <li><a href="{{route('about')}}">{{trans('main.about')}}</a></li>
+                                <li><a href="{{route('services')}}">{{trans('main.services')}}</a></li>
+                                <li><a href="{{route('posts')}}">{{trans('main.posts')}}</a></li>
+                                <li><a href="{{route('contacts')}}">{{trans('main.contacts')}}</a></li>
                             </ul>
                         </div>
                         <!-- Footer links End -->
@@ -56,7 +56,7 @@
                         <div class="footer-contact-info">
                             <!-- footer info heading Start -->
                             <div class="footer-info-heading">
-                                <h2>توصل معنا</h2>
+                                <h2>{{trans('main.contacts')}}</h2>
                             </div>
                             <!-- footer info heading End -->
 
@@ -75,7 +75,7 @@
                                         <i class="fa-solid fa-location-dot"></i>
                                     </div>
 
-                                    <p>المملكةالعربية السعوديه الرياض</p>
+                                    <p>{{trans('main.address')}}</p>
                                 </div>
 
                                 <div class="footer-info-box">
@@ -95,14 +95,13 @@
                     <div class="col-lg-3 col-md-6 col-12">
                         <!-- footer info heading Start -->
                         <div class="footer-info-heading">
-                            <h2>النشرة البريديه</h2>
+                            <h2>{{trans('main.Newsletter')}}</h2>
                         </div>
                         <!-- footer info heading End -->
 
                         <!-- Newsletters Content Start -->
                         <div class="newsletters-content">
-                            <p>ابقَ على اطلاع دائم بأحدث الأخبار والرؤى حول المواضيع التي تهمك. اشترك في نشرتنا الإخبارية لتلقي التحديثات المنتظمة والمعلومات القيمة مباشرة في بريدك الإلكتروني.
-
+                            <p>{{trans('main.Newsletter_description')}}
                             </p>
                         </div>
                         <!-- Newsletters Content End -->

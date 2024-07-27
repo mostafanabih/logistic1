@@ -8,11 +8,11 @@
                 <div class="col-lg-12">
                     <!-- Page Header box Start -->
                     <div class="page-header-box">
-                        <h2 class="">اتصل بنا</h2>
+                        <h2 class="">{{trans('main.contacts')}}</h2>
                         <nav class="wow fadeInUp" data-wow-delay="0.25s">
                             <ol class="breadcrumb">
-                                <li><a href="#">الرئيسيه</a></li>
-                                <li>اتصل بنا</li>
+                                <li><a href="#">{{trans('main.home')}}</a></li>
+                                <li>{{trans('main.contacts')}}</li>
                             </ol>
                         </nav>
                     </div>
@@ -30,7 +30,7 @@
                 <div class="col-lg-7 col-md-6">
                     <!-- Get Quote Start -->
                     <div class="get-quote">
-                        <h2 class="">ارسل لنا رساله</h2>
+                        <h2 class="">{{trans('main.Send_us_a_message')}}</h2>
                         <div class="get-quote-content">
                             <p class="wow fadeInUp" data-wow-delay="0.5s"></p>
                         </div>
@@ -40,30 +40,30 @@
                                 <div class="row">
                                     <div class="form-group col-md-12 mb-3">
                                         <input type="text" class="form-control" name="name" id="name"
-                                            placeholder="الاسم" required="">
+                                            placeholder="{{trans('main.name')}}" required="">
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-12 mb-3">
                                         <input type="text" class="form-control" name="phone" id="phone"
-                                            placeholder="رقم الجوال" required="">
+                                            placeholder="{{trans('main.phone')}}" required="">
                                         <div class="help-block with-errors"></div>
                                     </div>
 
 
                                     <div class="form-group  col-md-12 mb-3">
                                         <input type="email" class="form-control" name="email" id="email"
-                                            placeholder="البريد الكتروني" required="">
+                                            placeholder="{{trans('main.email')}}" required="">
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-12 mb-3">
-                                        <textarea class="form-control" id="msg" name="message" rows="3" placeholder="الرساله" required=""></textarea>
+                                        <textarea class="form-control" id="msg" name="message" rows="3" placeholder="{{trans('main.message')}}" required=""></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn-default">ارسال</button>
+                                        <button type="submit" class="btn-default">{{trans('main.send')}}</button>
                                         <div id="msgSubmit" class="h3 hidden"></div>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@
 
                 <div class="col-lg-5 col-md-6">
                     <div class="contact-us">
-                        <h2 class="">توصل معنا </h2>
+                        <h2 class="">{{trans('main.contacts')}} </h2>
                         <!-- Contact Us Info Start -->
                         <div class="contact-us-info">
                             <div class="footer-info-box wow fadeInUp" data-wow-delay="0.25s">
@@ -91,7 +91,7 @@
                                     <img src="{{ asset('assets/images/icon-location.svg') }}" alt="">
                                 </div>
 
-                                <p>المملكة العربيه السعوديه الرياض</p>
+                                <p>{{trans('main.address')}}</p>
                             </div>
 
                             <div class="footer-info-box wow fadeInUp" data-wow-delay="0.75s">
@@ -124,7 +124,7 @@
                             <!--Get Contact Us Start-->
                             <div class="header-contact-us">
                                 <a href="#"><img src="{{ asset('assets/images/icon-phone.svg') }}" alt="">
-                                    <h3>توصل معنا الان <span>0553383310</span></h3>
+                                    <h3>{{trans('main.contacts')}} <span>0553383310</span></h3>
                                 </a>
                             </div>
                             <!--Get Contact Us End-->

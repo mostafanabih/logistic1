@@ -35,7 +35,7 @@
 
                     <!--Get Contact Us Start-->
                     <div class="header-contact-us">
-                        <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>توصل معنا الان <span>0553383310</span></h3></a>
+                        <a href="#"><img src="{{asset('assets/images/icon-phone.svg')}}" alt=""><h3>{{trans('main.contact_us_now')}}<span>0553383310</span></h3></a>
                     </div>
                     <!--Get Contact Us End-->
 

@@ -9,11 +9,11 @@
                 <div class="col-lg-12">
                     <!-- Page Header box Start -->
                     <div class="page-header-box">
-                        <h2 class="">الخدمات</h2>
+                        <h2 class="">{{trans('main.services')}}</h2>
                         <nav class="wow fadeInUp" data-wow-delay="0.25s">
                             <ol class="breadcrumb">
-                                <li><a href="#">الرئيسيه</a></li>
-                                <li> الخدمات</li>
+                                <li><a href="#">{{trans('main.home')}}</a></li>
+                                <li> {{trans('main.services')}}</li>
                             </ol>
                         </nav>                                
                     </div>
