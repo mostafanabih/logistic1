@@ -45,5 +45,5 @@ return [
     "message" => "Message",
     "tt" => "Excellence Al-Najah offers you innovative logistical solutions thanks to our long experience and professional team",
     "tt_description" => "At Excellence Success Company, we know that logistics is the foundation of the success of any business. Therefore, we work hard to provide innovative and effective logistical services that guarantee you excellence in the market. Experience the difference with the distinction of success!",
-    "posts" => "Posts",
+    "lang" => "Lang",
 ];

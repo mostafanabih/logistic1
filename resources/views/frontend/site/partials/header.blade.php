@@ -20,14 +20,16 @@
                             <li class="nav-item"><a class="nav-link" href="{{route('posts')}}"> {{trans('main.posts')}}</a></li>
 
                             <li class="nav-item"><a class="nav-link" href="{{route('contacts')}}">  {{trans('main.contacts')}}</a></li>
+
+                            <li class="nav-item"><a class="nav-link"><i class="fa-solid fa-globe p-2"></i>{{trans('main.lang')}}</a>
+                                <ul class="sub-menu">
+                                   @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                    <li class="nav-item"><a class="nav-link" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">{{ $properties['native'] }}</a></li>
+                                    @endforeach
+                                </ul>
+                            </li>
                             
-    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-        <li>
-            <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                {{ $properties['native'] }}
-            </a>
-        </li>
-    @endforeach
+    
 
                         </ul>
                     </div>
